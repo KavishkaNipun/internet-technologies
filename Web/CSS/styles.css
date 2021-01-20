@@ -1,0 +1,827 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #fefefc;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #fefefc;
+    position: absolute;
+    background-image: url("../Assets/Image/kavishka.png");
+    display: flex;
+    background-size: 300px 750px;
+    background-repeat: no-repeat;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: Calibri;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
+    z-index: 1;
+
+}
+.menu{
+    display: flex;
+}
+.menu li a{
+    padding: 10px 15px;
+    color: #6c707c;
+    font-size: 12px;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: blue;
+    font-family: "Yu Gothic UI Semibold";
+}
+
+.un {
+    display: inline-block;
+}
+.un::after {
+    content: '';
+    width:0px;
+    height: 3px;
+    display: block;
+    background: gray;
+    transition: 300ms;
+}
+.un:hover::after
+    {
+    width: 100%;
+}
+
+/*--type.js--*/
+div h2{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    color: red;
+}
+
+div h2 span{
+    color: #32269a;
+}
+
+div h2{
+    position: absolute;
+    top: 38%;
+    left: 55%;
+    font-size: 40px;
+    color: gray;
+}
+
+/*--description--*/
+.description{
+    font-family: yorkten;
+    font-weight: bold;
+    width: 500px;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-20, -50%);
+}
+.description p{
+    color: #6c707c;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: yorkten;
+    margin: 0px;
+    left: 20px;
+    letter-spacing: 2px;
+
+}
+
+/*--contact-btn--*/
+.contact-btn{
+    position: relative;
+    font-weight: bold;
+    font-size: 30px;
+    left: 30%;
+    bottom: -43px;
+    width: 200px;
+    height: 45px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7416cb;
+    color: #FFFFFF;
+    text-shadow: 0px 25px 20px #7416cb;
+}
+.contact-btn:hover{
+
+    transition: all ease 0.5s;
+}
+
+/*--social-media-icons--*/
+.social{
+    position: absolute;
+    left: 640px;
+    bottom: 70px;
+    display: flex;
+}
+
+/*--margins in icons--*/
+.social g{
+    margin: 6px 12px;
+}
+.social t{
+    margin: 6px 12px;
+}
+.social l{
+    margin: 6px 12px;
+}
+.social f{
+    margin: 6px 12px;
+}
+.social i{
+    margin: 6px 12px;
+
+}
+
+/*--color & size in icon--*/
+.social a{
+    color: black;
+    font-size: 40px;
+}
+.social b{
+    color: #03a9f4;
+    font-size: 40px;
+}
+.social c{
+    color: #0078d4;
+    font-size: 40px;
+}
+.social d{
+    color: #3f51b5;
+    font-size: 40px;
+}
+.social e{
+    color: green;
+    font-size: 40px;
+}
+
+/*--hover effect & shadow in icon--*/
+.social g:hover a{
+    text-shadow: 0px 15px 40px black;
+    transition: all ease 0.5s;
+}
+.social t:hover b{
+    text-shadow: 0px 15px 40px #03a9f4;
+    transition: all ease 0.5s;
+}
+.social l:hover c{
+    text-shadow: 0px 15px 40px #0078d4;
+    transition: all ease 0.5s;
+}
+.social f:hover d{
+    text-shadow: 0px 15px 40px #3f51b5;
+    transition: all ease 0.5s;
+}
+.social i:hover e{
+    text-shadow: 0px 15px 40px green;
+    transition: all ease 0.5s;
+}
+.vl {
+    border: dashed;
+    border-left: #7416cb;
+    height: 130px;
+    position: absolute;
+    left: 50%;
+    top: 120%;
+}
+.circle{
+    height: 23px;
+    width: 18px;
+    background-color: #7416cb;
+    left: 49.5%;
+    top: 143%;
+    border-radius: 50%;
+    position: absolute;
+}
+.about h1{
+    position: absolute;
+    color: gray;
+    font-size: 40px;
+    left:50%;
+    top: 146%;
+}
+.about h2{
+    position: absolute;
+    color: black;
+    font-size: 50px;
+    left: 66.5%;
+    top: 160%;
+}
+.about a{
+    position: absolute;
+    color: #6c707c;
+    font-size: 25px;
+    left: 50.5%;
+    top: 175%;
+}
+.about b{
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    left: 51.5%;
+    top: 190%;
+}
+.about c{
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    left: 51.5%;
+    top: 195%;
+}
+.about d{
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    left: 51.5%;
+    top: 200%;
+}
+.about e{
+    position: absolute;
+    color: gray;
+    font-weight: bold;
+    font-size: 17px;
+    left: 58%;
+    top: 190%;
+}
+.about f{
+    position: absolute;
+    color: gray;
+    font-weight: bold;
+    font-size: 17px;
+    left: 58%;
+    top: 195%;
+}
+.about g{
+    position: absolute;
+    color: gray;
+    font-weight: bold;
+    font-size: 17px;
+    left: 58%;
+    top: 200%;
+}
+.about-pic{
+    position: absolute;
+    left: 5%;
+    top: 165%;
+}
+.download-cv-btn{
+    position: relative;
+    font-weight: bold;
+    font-size: 30px;
+    left: 65%;
+    top: 1350px;
+    width: 200px;
+    height: 45px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7416cb;
+    color: #FFFFFF;
+    text-shadow: 0px 25px 20px #7416cb;
+}
+.download-cv-btn:hover{
+
+    transition: all ease 0.5s;
+}
+.vl2 {
+    border: dashed;
+    border-left: #7416cb;
+    height: 130px;
+    position: absolute;
+    left: 16%;
+    top: 215%;
+}
+.circle2 {
+    height: 23px;
+    width: 18px;
+    background-color: #7416cb;
+    left: 15.5%;
+    top: 238%;
+    border-radius: 50%;
+    position: absolute;
+}
+.my-skills h1{
+    position: absolute;
+    color: gray;
+    font-size: 40px;
+    left:5%;
+    top: 240%;
+}
+.my-skills h2{
+    position: absolute;
+    color: black;
+    font-size: 50px;
+    left: 17.5%;
+    top: 255%;
+}
+.my-skills a{
+    position: absolute;
+    color: #6c707c;
+    font-size: 25px;
+    left: 5.25%;
+    top: 270%;
+}
+.container{
+    width: 500px;
+    margin: 50px auto 0;
+    padding: 20px;
+    position: absolute;
+    top: 270%;
+    left: 2.5%;
+}
+.container li{
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #6c707c;
+}
+.container li:before{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: #ffffff;
+    border-radius: 1000px;
+    box-shadow: 0.5px 1px 1px;
+}
+.container li:after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 15px;
+    background-color: #00aff3;
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.container li.java:after{
+    animation-name: java;
+}
+
+@keyframes java {
+    to{
+        width: 80%;
+    }
+}
+.container li.css:after{
+    animation-name: css;
+}
+@keyframes css {
+    to{
+        width: 70%;
+    }
+}
+.container li.html:after{
+    animation-name: html;
+}
+@keyframes html {
+    to{
+        width: 90%;
+    }
+}
+.container li.javascript:after{
+    animation-name: javascript;
+}
+@keyframes javascript {
+    to{
+        width: 80%;
+    }
+}
+.skill-pic{
+    position: absolute;
+    left: 56%;
+    top: 284%;
+}
+.vl3 {
+    border: dashed;
+    border-left: #7416cb;
+    height: 130px;
+    position: absolute;
+    left: 50%;
+    top: 345%;
+}
+.circle3{
+    height: 23px;
+    width: 18px;
+    background-color: #7416cb;
+    left: 49.5%;
+    top: 368%;
+    border-radius: 50%;
+    position: absolute;
+}
+.assignment h1{
+    position: absolute;
+    color: gray;
+    font-size: 40px;
+    left:50%;
+    top: 375%;
+}
+.assignment h2{
+    position: absolute;
+    color: black;
+    font-size: 50px;
+    left: 65.5%;
+    top: 390%;
+}
+.assignment a{
+    position: absolute;
+    color: #6c707c;
+    font-size: 25px;
+    left: 50%;
+    top: 405%;
+}
+.box{
+    position: absolute;
+    width: 1000px;
+    height: 300px;
+    background-color: #00aff3;
+    top: 420%;
+    left: 10%;
+}
+.box h1{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    top: 39%;
+    left: 40%;
+}
+.assignment-pic{
+    position: absolute;
+    left: 10%;
+    top: 400%;
+}
+.vl4{
+    border: dashed;
+    border-left: #7416cb;
+    height: 130px;
+    position: absolute;
+    left: 20%;
+    top: 485%;
+}
+.circle4{
+    height: 23px;
+    width: 18px;
+    background-color: #7416cb;
+    left: 19.5%;
+    top: 508%;
+    border-radius: 50%;
+    position: absolute;
+}
+.education h1{
+    position: absolute;
+    color: gray;
+    font-size: 40px;
+    left:1%;
+    top: 515%;
+}
+.education h2{
+    position: absolute;
+    color: black;
+    font-size: 50px;
+    left: 19.5%;
+    top: 530%;
+}
+.education a{
+    position: absolute;
+    color: #6c707c;
+    font-size: 25px;
+    left: 1.25%;
+    top: 545%;
+}
+.pic2{
+    position: absolute;
+    left: 45%;
+    top: 535%;
+}
+.shool-one{
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    border-radius: 12px;
+    background-color: white;
+    top: 585%;
+    left: 10%;
+    box-shadow: 2px 2px 3px black;
+}
+.shool-two{
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    border-radius: 12px;
+    background-color: white;
+    top: 585%;
+    left: 40%;
+    box-shadow: 2px 2px 3px black;
+}
+.shool-three{
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    border-radius: 12px;
+    background-color: white;
+    top: 585%;
+    left: 70%;
+    box-shadow: 2px 2px 3px black;
+}
+
+/*---Interesting page---*/
+
+/*Interest dash*/
+.vl5{
+    border: dashed;
+    border-left: #7416cb;
+    height: 130px;
+    position: absolute;
+    left: 50%;
+    top: 620%;
+}
+
+/*Interest circle*/
+.circle5{
+    height: 23px;
+    width: 18px;
+    background-color: #7416cb;
+    left: 49.5%;
+    top: 643%;
+    border-radius: 50%;
+    position: absolute;
+}
+
+/*Title*/
+.interesting h1{
+    position: absolute;
+    color: gray;
+    font-size: 40px;
+    left:51%;
+    top: 650%;
+}
+
+/*Subtitle*/
+.interesting h2{
+    position: absolute;
+    color: black;
+    font-size: 50px;
+    left: 64.25%;
+    top: 665%;
+}
+
+/*Description*/
+.interesting a{
+    position: absolute;
+    color: #6c707c;
+    font-size: 25px;
+    left: 51.5%;
+    top: 680%;
+}
+
+/*Interesting boxes*/
+.interest i1{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: white;
+    top: 700%;
+    left: 5%;
+    box-shadow: 1px 1px 3px black;
+}
+.interest i2{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: white;
+    top: 700%;
+    left: 30%;
+    box-shadow: 1px 1px 3px black;
+}
+.interest i3{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: white;
+    top: 700%;
+    left: 55%;
+    box-shadow: 1px 1px 3px black;
+}
+.interest i4{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: white;
+    top: 700%;
+    left: 80%;
+    box-shadow: 1px 1px 3px black;
+}
+.interest i5{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: white;
+    top: 760%;
+    left: 5%;
+    box-shadow: 1px 1px 3px black;
+}
+.interest i6{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: white;
+    top: 760%;
+    left: 30%;
+    box-shadow: 1px 1px 3px black;
+}
+.interest i7{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: white;
+    top: 760%;
+    left: 55%;
+    box-shadow: 1px 1px 3px black;
+}
+.interest i8{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: white;
+    top: 760%;
+    left: 80%;
+    box-shadow: 1px 1px 3px black;
+}
+
+/*---Contact me page---*/
+
+/*contact page dash*/
+.vl6{
+    border: dashed;
+    border-left: #7416cb;
+    height: 130px;
+    position: absolute;
+    left: 20%;
+    top: 820%;
+}
+
+/*contact page circle*/
+.circle6{
+    height: 23px;
+    width: 18px;
+    background-color: #7416cb;
+    left: 19.5%;
+    top: 843%;
+    border-radius: 50%;
+    position: absolute;
+}
+
+/*Title*/
+.Contact-me h1{
+    position: absolute;
+    color: gray;
+    font-size: 40px;
+    left:5%;
+    top: 850%;
+}
+
+/*Subtitle*/
+.Contact-me h2{
+    position: absolute;
+    color: black;
+    font-size: 50px;
+    left: 24%;
+    top: 865%;
+}
+
+/*Description*/
+.Contact-me a{
+    position: absolute;
+    color: #6c707c;
+    font-size: 25px;
+    left: 5.2%;
+    top: 880%;
+}
+
+/*Contact me foream windows*/
+.contact-me-windows1{
+    position: absolute;
+    width: 290px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: white;
+    top: 900%;
+    left: 40%;
+    box-shadow: 1px 1px 3px black;
+}
+.contact-me-windows1 k1{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: gray;
+    top: 22%;
+    left: 8%;
+}
+.contact-me-windows2{
+    position: absolute;
+    width: 290px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: white;
+    top: 912%;
+    left: 40%;
+    box-shadow: 1px 1px 3px black;
+}
+.contact-me-windows2 k2{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: gray;
+    top: 22%;
+    left: 8%;
+}
+.contact-me-windows3{
+    position: absolute;
+    width: 290px;
+    height: 250px;
+    border-radius: 30px;
+    background-color: white;
+    top: 925%;
+    left: 40%;
+    box-shadow: 1px 1px 3px black;
+}
+.contact-me-windows3 k3{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: gray;
+    top: 9%;
+    left: 8%;
+}
+
+/*send button*/
+.send-btn{
+    position: relative;
+    font-weight: bold;
+    font-size: 30px;
+    left: 16%;
+    top: 124%;
+    width: 200px;
+    height: 45px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7416cb;
+    color: #FFFFFF;
+    text-shadow: 0px 25px 20px #7416cb;
+}
+
+/*send button effect*/
+.send-btn:hover{
+    transition: all ease 0.5s;
+}
