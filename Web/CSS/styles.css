@@ -398,6 +398,7 @@ div h2{
     animation-name: java;
 }
 
+/*keyframes*/
 @keyframes java {
     to{
         width: 80%;
